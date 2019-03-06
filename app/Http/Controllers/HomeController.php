@@ -31,4 +31,9 @@ class HomeController extends Controller
         return view('site.pages.home');
     }
 
+
+    public function add_your_pic() {
+        return view('site.pages.add_your_pic');
+    }
+
 }

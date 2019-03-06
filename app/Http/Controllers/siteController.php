@@ -22,8 +22,4 @@ class siteController extends Controller
         return view('site.pages.mdracity');
     }
     
-    public function add_your_pic() {
-        return view('site.pages.add_your_pic');
-    }
-    
 }

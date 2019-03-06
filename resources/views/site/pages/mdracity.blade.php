@@ -146,25 +146,25 @@
     @endif
 
     <script>
-    $(document).on("click","#re_btn", function() {
-      var re_form = $('#re_form').serialize();
-      var url = $('#re_form').attr('action');
-      $.ajax({
-        url:url,
-        dataType:'html',
-        data: re_form,
-        type: 'post',
-        beforSend: function()
-        {
+    // $(document).on("click","#re_btn", function() {
+    //   var re_form = $('#re_form').serialize();
+    //   var url = $('#re_form').attr('action');
+    //   $.ajax({
+    //     url:url,
+    //     dataType:'html',
+    //     data: re_form,
+    //     type: 'post',
+    //     beforSend: function()
+    //     {
 
-        },success: function(data)
-        {
-          alert(data);
-        }
-      });
+    //     },success: function(data)
+    //     {
+    //       alert(data);
+    //     }
+    //   });
       
-      return false;
-    });
+    //   return false;
+    // });
     </script>
 <!-- The Js file here -->
 @endsection
