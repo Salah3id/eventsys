@@ -32,6 +32,15 @@
           <li><a href="#"><i class="si si-user"></i>صفحتي</a></li>
           <li><a href="#"><i class="si si-calendar"></i>الجدول</a></li>
           <li><a href="#"><i class="si si-settings"></i>الاعدادات</a></li>
+          @auth 
+          <li><a href="{{ route('logout') }}"onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="si si-outdoor"></i>تسجيل الخروج</a></li>
+
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+          @endauth
+          
         </ul>
     </div>
     <!--End sidebar-->

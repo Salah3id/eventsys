@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class siteController extends Controller
 {
-    protected $redirectTo = '/add_your_pic';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -15,10 +15,10 @@ class siteController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        //$this->middleware('guest');
     }
     //
-    public function mdracity() {
+    public function home() {
         return view('site.pages.mdracity');
     }
     

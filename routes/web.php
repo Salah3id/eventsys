@@ -11,13 +11,8 @@
 |
 */
 
-Route::get('/wl', function () {
-    return view('welcome');
-});
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-Route::get('/illia/{id?}', 'HomeController@illia')->name('illia');
-Route::middleware('guest')->get('/','siteController@mdracity')->name('home');
+Route::get('/','siteController@home')->name('home');
 Route::middleware('auth')->get('/add_your_pic','HomeController@add_your_pic')->name('add_your_pic');

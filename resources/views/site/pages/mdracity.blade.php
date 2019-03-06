@@ -29,8 +29,21 @@
 <li><i class="pe-7s-users"></i></li>
 <li><i class="pe-7s-chat"><i class="fa fa-circle notifacation">+99</i></i></li>
 -->
-<li><a class="btn btn-trans" role="button" data-toggle="modal" data-target="#register_popup">أشتراك</a></li>
+@guest
 <li><a class="btn btn-trans" role="button" data-toggle="modal" data-target="#login_popup">دخول</a></li>
+                            
+                            <li><a class="btn btn-trans" role="button" data-toggle="modal" data-target="#register_popup">أشتراك</a></li>
+                           
+                        
+                        @endguest
+                        @auth
+                        <li><i class="pe-7s-user"></i></li>
+                        <li><i class="pe-7s-like"><i class="fa fa-circle notifacation">+99</i></i></li>
+                        <li><i class="pe-7s-users"></i></li>
+                        <li><i class="pe-7s-chat"><i class="fa fa-circle notifacation">+99</i></i></li>
+                        @endauth
+
+
 @endsection
 
 @section('popup_content')
