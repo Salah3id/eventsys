@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+button {
+  font-family: 'Cairo', sans-serif !important;
+    font-weight: 600;
+}
+
+
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+::placeholder {
+  color:#8e8e8e;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif !important; 
+  margin-top:10px;
+}
+
+ .full-page {
+    margin: 0 !important;
+    padding:0 !important;
+ }
+
+ .illia-page {
+    position: absolute;
+    background-color:white;
+    padding: 0 !important;
+    transition: all 0.6s;
+ }
+ #mainNav {
+    padding: 0px;
+    margin:10px;
+ }
+ .logo {
+   position: fixed;
+   right:25px;
+   position: fixed;
+   right: 25px;
+   top:25px;
+   width: 100px;
+   color: #6a95f9;
+   text-align: center;
+   user-select: none;
+   cursor: pointer;
+   font-family: fantasy;
+ }
+
+ .lg-side-bar {
+    padding: 0 !important;
+    height: 100%;
+    margin: 0 10px;
+    position: fixed;
+    transition: all 1s;
+    z-index: 999999;
+ }
+ .lg-side-bar ul {
+    padding: 15px;
+    list-style: none;
+ }
+
+ .lg-side-bar a {
+    border-radius: 50px;
+    box-shadow: 0 0 20px -5px;
+    margin:10px 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: block;
+    padding:2% 5%;
+    background-color: white;
+    font-weight: 500;
+    font-size: 20px;
+    color: #8a8a8a;
+    font-family: sans-serif;
+    transition: all 0.4s;
+  }
+  .lg-side-bar a i{
+    padding-right:20px;
+  }
+  .lg-side-bar a:hover {
+    background-color:#fdfbfb;
+    text-decoration: none;
+    color:#007bff;
+    transition: all 0.4s;
+  }
+
+  
+
+  .sm-bar a {
+    border-radius: 30px;
+    box-shadow: 0 0 20px -5px;
+    margin: 20px 0;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid #cacaca;
+    display: block;
+    padding:10px 20px;
+    background-color: #f5f4f4;
+    font-weight: 500;
+    font-size: 20px;
+    color: #8a8a8a;
+    font-family: sans-serif;
+    transition: all 0.4s;
+  }
+  .sm-bar a i{
+    padding-right:20px;
+  }
+  .sm-bar a:hover {
+    background-color:#fdfbfb;
+    text-decoration: none;
+    color:rgb(41, 41, 41);
+    transition: all 0.4s;
+  }
+  .sm-bar{
+    text-align:left;
+    padding: 0px;list-style: none;
+  }
+
+  .bar-btn-lg {
+    margin-left: 110%;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 11px -1px #00000052;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 0;
+    background-color: #ffffff;
+    color:#8a8a8a;
+    transition: all 0.4s;
+  }
+  .bar-btn-lg:hover {
+    box-shadow: -1px 1px 11px -2px #00000052;
+    transition: all 0.4s;
+  }
+  .bar-btn-sm {
+    margin-top: 15px !important;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 1px 2px 11px -1px #00000052;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    border: 0 !important;
+    background-color: #ffffff;
+    color:#8a8a8a !important;
+    margin:10px !important;
+    transition: all 0.4s;
+  }
+  .bar-btn-lg:hover {
+    box-shadow: -1px 1px 11px -2px #00000052;
+    color:#6a95f9;
+    transition: all 0.4s;
+  }
+
+  .screen-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 1px 2px 11px -1px #00000052;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    border: 0 !important;
+    background-color: #ffffff;
+    color:#8a8a8a !important;
+    margin:10px !important;
+    z-index:9999999;
+    transition: all 0.4s;
+  }
+  .screen-btn:hover {
+    box-shadow: 1px -1px 11px -2px #00000052;
+    transition: all 0.4s;
+  }
+
+  .add-btn {
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 1px 2px 11px 1px #00000052;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    border: 0 !important;
+    background-color: #ffffff;
+    color:#8a8a8a !important;
+    margin:10px !important;
+    z-index:999;
+    transition: all 0.4s;
+  }
+  .add-btn:hover {
+    box-shadow: 2px 3px 11px 1px #00000052;
+    transition: all 0.4s;
+  }
+  .add-btn i {
+    color :#6a95f9;
+    transition: all 0.4s;
+    
+  }
+  .add-btn:hover i {
+    color :#6a95f9;
+    transition: all 0.4s;
+    
+  }
+
+  .back-top-btn {
+    position: fixed;
+    bottom:10px;
+    left: 10px;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 1px 2px 11px 1px #00000052;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    border: 0 !important;
+    background-color: #ffffff;
+    color:#8a8a8a !important;
+    margin:10px !important;
+    z-index:999;
+    transition: all 0.4s;
+  }
+
+  .back-top-btn:hover {
+    box-shadow: -2px 3px 11px 1px #00000052;
+    color:#6a95f9;
+    transition: all 0.4s;
+  }
+  .back-top-btn i {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+
+  .btn-trans {
+
+    color:black;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    border:none;
+    vertical-align: text-bottom;
+  }
+  .btn-trans:hover {
+    color:#007bff !important;
+    border:none;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    width:100%;
+    bottom: 25px;
+    left:0px;
+    transition: all 0.4s;
+  }
+
+  .bottom-nav ul {
+    background-color: white;
+    box-shadow: 0 0 20px -5px;
+    border-radius: 50px;
+    width:50%;
+    text-align: center;
+    margin-bottom: 0px !important;
+    margin-left:25%;
+    padding:0px;
+  }
+  .bottom-nav ul li {
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 200;
+    padding: 2% 5%;
+  }
+  .bottom-nav ul li i {
+    transition:all 0.4s;
+    font-weight: bold;
+  }
+  .bottom-nav ul li i:hover {
+    color:#6a95f9;
+    cursor: pointer;
+    transition:all 0.4s;
+  }
+  @media (max-width: 460px) {
+    .bottom-nav ul li { font-size: 21px;}
+  }
+
+
+  .bottom-nav ul li i.notifacation {
+    position: absolute !important;
+    font-size: 14px;
+    margin-right: 10px !important;
+    margin: 0px -9px;
+    color: #f52929ad;
+  }
+
+
+
+
+
+/*scroll style*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-left: 1px solid #6a95f9;
+  box-shadow: inset 0 0 0px #3575ff; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 20px #6a95f9; 
+  background: white; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#6a95f9; 
+}
+
+
+.bottom-nav.scrollUp {
+  transform: translateY(100px);
+  transition: all 0.4s;
+}
+
+.all-content {
+  transition:all 0.4s
+}
+
+
+.md-form-group {
+  padding:10px;
+}
+
+.md-form-group input {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 52px;
+  margin-top: 15px;
+  width:100%;
+  border:0;
+  border-bottom: 2px solid #6a95f9;
+}
+
+.md-form-group input:focus {
+  border-bottom: 5px solid #6a95f9;
+  outline: none;
+}
+
+
+.modal-content {
+  border-radius: 30px !important;
+} 
+
+.input-name input {
+  width: 49% !important;
+  padding: 0px !important;
+}
+
+.btn-submit {
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #007bff;
+  color:white;
+  border: 0;
+  padding: 10px 60px !important;
+  transition:all 0.4s;
+}
+
+.btn-submit:hover {
+  background-color: #0368d4;
+  transition:all 0.4s;
+  color:white;
+}
+
+
+
+.btn-out {
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #ff6b57;
+  color:white;
+  border: 0;
+  padding: 10px 35px !important;
+  transition:all 0.4s;
+}
+
+.btn-out:hover {
+  background-color: #fa4d36;
+  transition:all 0.4s;
+  color:white;
+}
+
+
+  

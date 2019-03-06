@@ -44,7 +44,7 @@ return [
             'host' => '127.0.0.1',
             'sticky'    => true,
             'driver'    => 'mysql',
-            'database'  => 'illia_db',
+            'database'  => 'illia',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',
