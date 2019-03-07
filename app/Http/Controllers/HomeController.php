@@ -32,8 +32,8 @@ class HomeController extends Controller
     }
 
 
-    public function add_your_pic() {
-        return view('site.pages.add_your_pic');
+    public function profile() {
+        return view('site.pages.profile');
     }
 
 }

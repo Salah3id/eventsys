@@ -15,4 +15,4 @@
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/','siteController@home')->name('home');
-Route::middleware('auth')->get('/add_your_pic','HomeController@add_your_pic')->name('add_your_pic');
+Route::middleware('auth')->get('/profile','HomeController@profile')->name('profile');
